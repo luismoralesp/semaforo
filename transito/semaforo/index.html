@@ -29,6 +29,15 @@
             <button onclick="resetar()">Resetear</button>
             <br>
             <textarea id="consola" cols="50" rows="10"></textarea>
+            <ol>
+                <li>prender (ROJO|VERDE|AMARILLO).: prende una luz</li>
+                <li>apagar (ROJO|VERDE|AMARILLO).: apaga una luz</li>
+                <li>esperar (número). : espera un tiempo en milisegundos</li>
+                <li>contar (). : incrementa en uno el valor del contador</li>
+                <li>descontar ().: decrementa en uno el valor del contador</li>
+                <li>colocar (número).: coloca un valor en el contador</li>
+                <li>pantalla (ROJO|VERDE|AMARILLO).: coloca un color a la pantalla</li>
+            </ol>
             <script>
                 function quemar(){
                     let code = document.querySelector("#consola").value;

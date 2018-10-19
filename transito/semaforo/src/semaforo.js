@@ -1,5 +1,5 @@
 import('../libs/index.js').then(({luz, timepo, cont})=> {
-    let fn = (prender, apagar, ROJO, VERDE, AMARILLO, esperar, contar, descontar, pantalla ) => {
+    let fn = (prender, apagar, ROJO, VERDE, AMARILLO, esperar, contar, descontar, pantalla, colocar ) => {
         
         if (!getCookie("code")){
             setCookie("code", "\
@@ -51,7 +51,8 @@ import('../libs/index.js').then(({luz, timepo, cont})=> {
         timepo.esperar,
         cont.contar,
         cont.descontar,
-        cont.pantalla
+        cont.pantalla,
+        cont.colocar
     )
     
 });

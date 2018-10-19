@@ -113,3 +113,7 @@
     background-color: #181818;
     color: #00f419;
 }
+
+ol {
+    font-family: monospace;
+}

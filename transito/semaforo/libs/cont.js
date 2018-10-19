@@ -29,7 +29,15 @@ var cont = {
             pant.classList.add(col);
             next(done);
         }
-    }
+    },
+
+    colocar: (num) => {
+        return (next, done) => {
+            let pant = document.querySelector(".pantalla");
+            pant.textContent = (num <= 9 ? "0" + num : num);
+            next(done);
+        }
+    },
 };
 
 export {cont};

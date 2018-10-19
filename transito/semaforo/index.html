@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="src/semaforo.css">
+        <title>Semáforo</title>
+
+        <script src="src/semaforo.js"></script>
+    </head>
+    <body>
+        <div class="objeto">
+            <div class="semaforo">
+                <div class="luz verde"></div>
+                <div class="luz amarilla"></div>
+                <div class="luz roja"></div>
+            </div>
+            <div class="conector">
+                <div class="barra">
+                    <div class="contador">
+                        <div class="pantalla">00</div>
+                    </div>
+                </div>                                                                                                                                                                                                                                                              
+            </div>                                                                                                                                                                                                                                                          
+        </div>
+        <div>
+            <button onclick="quemar()">Quemar</button>
+            <button onclick="resetar()">Resetear</button>
+            <br>
+            <textarea id="consola" cols="50" rows="10"></textarea>
+            <script>
+                function quemar(){
+                    let code = document.querySelector("#consola").value;
+                    code = code.replace(/\s/g, '');
+                    setCookie("code", code);
+                    window.location.reload();
+                }
+                function resetar(){
+                    setCookie("code", "");
+                    window.location.reload();
+                }
+            </script>
+        </div>
+    </body>
+</html>

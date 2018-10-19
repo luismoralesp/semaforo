@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Segment14';
+    src: url('Segment14.otf'); /* IE9 Compat Modes */
+    src: url('Segment14.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('webfont.woff') format('woff'), /* Modern Browsers */
+         url('Segment14.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
+
+.objeto{
+    margin: 30px;
+}
+
+.semaforo{
+    width: 60px;
+    height: 180px;
+    border: solid 1px;
+    border-radius: 10px;
+    background-color: #777;
+    z-index: 2;
+    position: relative;
+    display: inline-block;
+}
+
+
+.luz {
+    width: 40px;
+    height: 40px;
+    border: solid 1px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.luz.verde {
+    background-color: #90ad90;
+}
+
+.verde.encendida {
+    background-color: #0d0;
+    box-shadow: 0px 0px 10px #0d0 ;
+}
+
+.luz.amarilla {
+    background-color: #d4d4ae;
+}
+
+.amarilla.encendida {
+    background-color: #dd0;
+    box-shadow: 0px 0px 10px #dd0 ;
+}
+
+.luz.roja {
+    background-color: #ad9c9c;
+}
+
+.roja.encendida {
+    background-color: #d00;
+    box-shadow: 0px 0px 10px #d00 ;
+}
+
+.barra {
+    width: 300px;
+    height: 40px;
+    background-color: #c4c4b9;
+    box-shadow: inset 0px 0px 10px #7a7a72 ;
+    border: solid 1px;
+    border-radius: 15px;
+}
+
+.conector {
+    display: inline-block;
+    margin-left: -20px;
+    height: 118px;
+}
+
+.contador {
+    width: 130px;
+    height: 100px;
+    border: solid 1px;
+    border-radius: 10px;
+    background-color: #777;
+    z-index: 2;
+    margin-top: -30px;
+    margin-left: 80px;
+    position: absolute;
+    display: inline-block;
+}
+
+.pantalla {
+    width: 100px;
+    height: 70px;
+    font-family: Segment14;
+    background-color: #111;
+    margin: 10px;
+    padding: 5px;
+    padding-left: 8px;
+    font-size: 80px;
+    color: #fdfdfd;
+}
+
+.pantalla.verde {
+    color: #0d0;
+}
+
+.pantalla.amarrilla {
+    color: #dd0;
+}
+
+.pantalla.roja {
+    color: #d00;
+}
+
+#consola {
+    background-color: #181818;
+    color: #00f419;
+}
